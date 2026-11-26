@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+ <meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+ <meta name="theme-color" content="#e53942"/>
+ <meta name="description" content="Ứng dụng điểm danh khuôn mặt đa cấp Agribank Chi nhánh Vĩnh Phúc — bản thử nghiệm tập trung"/>
+ <title>Agribank Vĩnh Phúc | Điểm danh tập trung</title>
+ <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div id="app" class="app">
+ <aside class="sidebar">
+  <div class="brand">
+   <div class="brandframe" aria-label="Logo đơn vị">
+    <img id="brandImage" class="brandimage" alt="Logo nhận diện thương hiệu đã tải lên" hidden />
+    <div id="brandFallback" class="brandfallback"><span class="brandfallback-icon" aria-hidden="true">▧</span><span>LOGO ĐƠN VỊ<br><small>Quản trị viên tải ảnh lên</small></span></div>
+   </div>
+   <button id="menuToggle" class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="sidecaption">ĐIỂM DANH NHÂN SỰ · 2026</div>
+  <nav id="menu" class="menu"></nav>
+  <div class="sidebottom">HỆ THỐNG QUẢN LÝ TẬP TRUNG<br/><small>CN loại I · CN loại II · Phòng</small></div>
+ </aside>
+ <div id="mobileBackdrop" class="mobile-backdrop" aria-hidden="true"></div>
+ <main class="main">
+  <header class="topbar"><div><div class="pagehint" id="pageHint">HỆ THỐNG ĐIỂM DANH</div><h1 id="pageTitle">Đăng nhập hệ thống</h1></div><div class="userbar"><span id="userIdentity"></span><button class="btn ghost small" id="logoutBtn" hidden>Đăng xuất</button></div></header>
+  <div id="notices"></div>
+  <section id="content" aria-live="polite"></section>
+  <footer class="footer">Bản thử nghiệm · Cần được phê duyệt và kiểm thử an toàn, chống giả mạo trước khi sử dụng dữ liệu sinh trắc học thật.</footer>
+ </main>
+</div>
+<nav id="bottomNav" class="bottom-nav" aria-label="Điều hướng nhanh"></nav>
+<dialog id="modal"><div id="modalBody"></div></dialog>
+<div id="toasts" aria-live="polite"></div>
+<script src="config.js?v=20261126-kiosk1"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
